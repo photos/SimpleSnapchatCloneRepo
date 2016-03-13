@@ -6,16 +6,23 @@
 //  Copyright (c) 2015 Forrest Collins. All rights reserved.
 //
 
+import Parse
+import Bolts
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Initialize Parse.
+        Parse.setApplicationId("PuQc2c45wpRY74o8ZiTcSD9gcuismko9CugLx8mO",
+            clientKey: "3L1ahJ64ZeodAxR8tfIgHRZShdvKYe05bGpeOSr8")
+      
+        
         return true
     }
 
